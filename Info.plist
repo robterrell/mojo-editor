@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Main cib file base name</key>
+	<string>MainMenu.cib</string>
+	<key>CPBundleName</key>
+	<string>Mojo</string>
+	<key>CPPrincipalClass</key>
+	<string>CPApplication</string>
+	<key>databaseServer</key>
+	<string>http://localhost:5984/</string>
+	<key>databaseName</key>
+	<string>mojo_scenes</string>
+</dict>
+</plist>

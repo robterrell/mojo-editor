@@ -1,0 +1,74 @@
+<html>
+
+	<head>
+	
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>ACEKit</title>
+		
+		<link rel="stylesheet" href="reset.css" type="text/css" media="screen, projection">
+		
+		<style type="text/css">
+		
+			#editor {
+				
+				position: absolute;
+				width: 100%;
+				height: 100%;
+			
+			}
+		
+		</style>
+
+	</head>
+	
+	<body>
+
+		<div id="editor"></div>
+		
+		<script src="ace/ace-uncompressed.js"></script>
+		<script src="ace/mode-javascript.js"></script>
+		
+		<script>
+		
+			function ACCEditorViewInitialize () {
+			
+				window.initializedACEEditor = ace.edit("editor");
+				return window.initializedACEEditor;
+			
+			}
+			
+			function ACEEditor () {
+				
+				return window.initializedACEEditor;
+				
+			}
+			
+			function ACENamespace () {
+				
+				return ace;
+				
+			}
+			
+			function ACCEditorViewFocus () {
+				
+				var editorElement = document.getElementById("editor");
+				
+				if (editorElement)
+				editorElement.focus();
+				
+			}
+			
+			function ACEEditorSetModeName (aName) {
+				
+				var internalMode = require(aName).Mode;
+
+				if (window.initializedACEEditor)
+				window.initializedACEEditor.getSession().setMode(new internalMode());
+				
+			}
+		
+		</script>
+
+	</body>
+
+</html>
