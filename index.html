@@ -32,7 +32,7 @@
 	
 	<script type="text/javascript">
 		OBJJ_MAIN_FILE = "main.j";
-		OBJJ_INCLUDE_PATHS = ["Frameworks/Debug", "Frameworks", "SomethingElse"];
+		OBJJ_INCLUDE_PATHS = ["Frameworks/Release", "Frameworks", "GrowlCappuccino"];
 	</script>
 
 	<script src="Frameworks/Debug/Objective-J/Objective-J.js" type="text/javascript" charset="UTF-8"></script>
@@ -43,7 +43,7 @@
 		// DEBUG OPTIONS:
 
 		// Uncomment to enable printing of backtraces on exceptions:
-		objj_msgSend_decorate(objj_backtrace_decorator);
+		// objj_msgSend_decorate(objj_backtrace_decorator);
 		
 		// Uncomment to supress exceptions that take place inside a message
 		//objj_msgSend_decorate(objj_supress_exceptions_decorator)
@@ -52,7 +52,7 @@
 		//objj_msgSend_decorate(objj_typecheck_decorator);
 
 		// Uncomment (along with both above) to print backtraces on type check errors:
-		objj_typecheck_prints_backtrace = true;
+		// objj_typecheck_prints_backtrace = true;
 
 		// Uncomment to disable the default logger (CPLogConsole if window.console exists, CPLogPopup otherwise):
 		//CPLogUnregister(CPLogDefault);
